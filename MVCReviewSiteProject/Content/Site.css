@@ -22,3 +22,24 @@ select,
 textarea {
     max-width: 280px;
 }
+.title{
+    text-align:center;
+    font-family:'Estrangelo Edessa';
+    font-size:60px;
+    padding:20px;
+    background-color:crimson;
+    color:white;
+    border-bottom:dotted white 5px;
+}
+.create{
+    text-align:center;
+    padding-bottom:20px;
+}
+.reviewBox{
+    border:double crimson;
+    padding:10px;
+    font-family:Gisha;
+}
+.createLink{
+    color:crimson;
+}

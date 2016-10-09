@@ -4,10 +4,10 @@
     ViewBag.Title = "Perfectly Parisian";
 }
 
-<h2>Perfectly Parisian</h2>
+<h2 class="title">Perfectly Parisian</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+<p class="create">
+    <span class="createLink">@Html.ActionLink("Create New", "Create")</span>
 </p>
 
             @*@Html.DisplayNameFor(model => model.Category.Name)
@@ -21,27 +21,31 @@
     @foreach (var item in Model)
     {
         <div class="col-xs-12 col-md-6">
-            <div class="media">
-                <div class="media-left">
-                    <img class="media-object" src="~/images/20160306_112709.jpg" width="110" height="145" alt="Eiffel Tower">
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">@Html.DisplayFor(modelItem => item.Title)</h4>
-                    <p>@Html.DisplayFor(modelItem => item.Location)</p>
-                    <p>@Html.DisplayFor(modelItem => item.Category.Name)</p>
-                    <p>@Html.DisplayFor(modelItem => item.Content)</p>
-                    <p>@Html.DisplayFor(modelItem => item.PublishDate)</p>
-                    <p>@Html.DisplayFor(modelItem => item.PublisherName)</p>
-                    <p>@Html.ActionLink("Edit", "Edit", new { id = item.ID }, new {@class="btn btn-default"})
-                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-default" })
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ID },new { @class = "btn btn-default" })</p>
+            <div class="reviewBox">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="~/images/20160306_112709.jpg" width="110" height="145" alt="Eiffel Tower">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">@Html.DisplayFor(modelItem => item.Title)</h4>
+                        <p>@Html.DisplayFor(modelItem => item.Location)</p>
+                        <p>@Html.DisplayFor(modelItem => item.Category.Name)</p>
+                        <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                        <p>@Html.DisplayFor(modelItem => item.PublishDate)</p>
+                        <p>@Html.DisplayFor(modelItem => item.PublisherName)</p>
+                        <p>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-default" })
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-default" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-default" })
+                    </p>
 
 
 
-                    
+
                 </div>
             </div>
         </div>
+    </div>
 
     }
 
