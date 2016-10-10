@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background: repeating-linear-gradient(to right, #d5d5c3, #d5d5c3 20px, #b6b696 20px, #b6b696 40px);
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -31,11 +32,23 @@ textarea {
     padding:20px;
     background-color:crimson;
     color:white;
+    
+}
+.subheading{
+    text-align:center;
+    font-family:'Estrangelo Edessa';
+    font-size:30px;
+    background-color:crimson;
+    color:white;
+}
+.mainHeading{
+    background-color:crimson;
     border-bottom:dotted white 5px;
 }
 .create{
     text-align:center;
     padding-bottom:20px;
+    padding-top:15px;
 }
 .reviewBox{
     border:double crimson;
@@ -44,6 +57,7 @@ textarea {
 
     min-height:525px;
     margin-bottom:10px;
+    background-color:white;
 }
 .media-heading{
     font-size:30px;
@@ -82,6 +96,8 @@ a:hover{
 .detailBody{
     background-color:lightpink;
     padding:20px;
+    padding-left:50px;
+    padding-right:50px;
     margin-top:10px;
 }
 .detailPage{
@@ -93,4 +109,13 @@ a:hover{
     border:double white;
     max-width:300px;
     text-align:center;
+}
+.delete{
+    text-align:center;
+    font-family:FangSong;
+    font-weight:700;
+}
+.deleteContent{
+    font-family:FangSong;
+    font-weight:bold;
 }
