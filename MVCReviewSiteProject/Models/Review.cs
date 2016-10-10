@@ -21,6 +21,7 @@ namespace MVCReviewSiteProject.Models
         public string PublisherName { get; set; }
 
         [ForeignKey("Category")]
+        [Display(Name ="Category Type")]
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
     }

@@ -8,6 +8,7 @@ namespace MVCReviewSiteProject.Models
 {
     public class Category
     {
+        
         public int ID { get; set; }
         [Display (Name = "Category")]
         public string Name { get; set; }
