@@ -8,6 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    @*NavBar*@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -27,9 +28,11 @@
             </div>
         </div>
     </div>
+    @*All page bodies are in a container*@
     <div class="container body-content">
         @RenderBody()
         <hr />
+        @*Footer*@
         <footer>
             <p>&copy; @DateTime.Now.Year - Perfectly Parisian</p>
         </footer>

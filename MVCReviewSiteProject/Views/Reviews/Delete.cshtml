@@ -3,13 +3,14 @@
 @{
     ViewBag.Title = "Delete";
 }
-
+@*Heading*@
 <h2 class="delete">Delete</h2>
 
 <h3 class="delete">Are you sure you want to delete this?</h3>
 <div>
     
     <hr />
+    @*Body*@
     <div class="row">
         <div class="col-xs-12 col-md-6">
             <p class="deleteContent">
@@ -44,6 +45,7 @@
                 <br />
                 <br/>
             </p>
+            @*Links at bottom*@
             @using (Html.BeginForm())
             {
                 @Html.AntiForgeryToken()

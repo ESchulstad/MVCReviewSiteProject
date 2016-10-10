@@ -9,7 +9,7 @@ namespace MVCReviewSiteProject.Models
 {
     public class Review
     {
-
+        //Properties for Reviews
         [Key]
         public int ID { get; set; }
         public string Title { get; set; }
@@ -20,6 +20,7 @@ namespace MVCReviewSiteProject.Models
         [Display(Name ="Publisher Name")]
         public string PublisherName { get; set; }
 
+        //Sets up a relationship with category model
         [ForeignKey("Category")]
         [Display(Name ="Category Type")]
         public int CategoryID { get; set; }

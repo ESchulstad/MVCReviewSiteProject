@@ -25,6 +25,7 @@ textarea {
     max-width: 280px;
    
 }
+/*Heading on main/index page*/
 .title{
     text-align:center;
     font-family:'Estrangelo Edessa';
@@ -34,6 +35,7 @@ textarea {
     color:white;
     
 }
+/*Subheading on index page*/
 .subheading{
     text-align:center;
     font-family:'Estrangelo Edessa';
@@ -41,15 +43,18 @@ textarea {
     background-color:crimson;
     color:white;
 }
+/*contains both headings*/
 .mainHeading{
     background-color:crimson;
     border-bottom:dotted white 5px;
 }
+/*create link*/
 .create{
     text-align:center;
     padding-bottom:20px;
     padding-top:15px;
 }
+/*box and text for each review*/
 .reviewBox{
     border:double crimson;
     padding:10px;
@@ -59,26 +64,33 @@ textarea {
     margin-bottom:10px;
     background-color:white;
 }
+/*title for each review*/
 .media-heading{
     font-size:30px;
 }
+/*makes color crimson for all links*/
 a{
     color:crimson;
 }
+/*changes hover color for all links*/
 a:hover{
     color:deeppink;
     text-decoration:none;
 }
+/*for the edit, delete, and details buttons on index page*/
 .btn-default{
     border-color:crimson;
 }
+/*for hover on buttons*/
 .btn-default:hover{
     border-color:crimson;
     background-color:deeppink;
 }
+/*changes color of nav bar buttons*/
 .navbar-inverse .navbar-nav > li > a{
     color:white;
 }
+/*for heading on details page*/
 .details{
     text-align:center;
     font-family:'Angsana New';
@@ -86,6 +98,7 @@ a:hover{
     color:white;
     border-bottom:dotted white;
 }
+/*for review subheading on details page*/
 .review{
     text-align:center;
     font-family:'Angsana New';
@@ -93,6 +106,7 @@ a:hover{
     margin-top:0px;
     color:white;
 }
+/*for box around details info on details page*/
 .detailBody{
     background-color:lightpink;
     padding:20px;
@@ -100,21 +114,25 @@ a:hover{
     padding-right:50px;
     margin-top:10px;
 }
+/*for text on details page*/
 .detailPage{
     text-align:center;
     font-family:'Comic Sans MS';
     color:deeppink;
 }
+/*for edit and back to content links on details page*/
 .link{
     border:double white;
     max-width:300px;
     text-align:center;
 }
+/*Delete heading on delete page*/
 .delete{
     text-align:center;
     font-family:FangSong;
     font-weight:700;
 }
+/*info on delete page*/
 .deleteContent{
     font-family:FangSong;
     font-weight:bold;

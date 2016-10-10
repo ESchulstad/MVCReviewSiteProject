@@ -3,11 +3,16 @@
 @{
     ViewBag.Title = "Perfectly Parisian";
 }
+
+@*Heading*@
 <div class="mainHeading">
     <h2 class="title">Perfectly Parisian</h2>
 
     <h3 class="subheading">Reviews and Tips About the Best Places to Visit in Paris</h3>
 </div>
+
+@*Link to creat new review*@
+
 <p class="create">
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -19,6 +24,9 @@
             @Html.DisplayNameFor(model => model.PublishDate)
             @Html.DisplayNameFor(model => model.PublisherName)*@
 <div class="row">
+
+    @*In a row, loop will creat new review in a box size 6 for med or bigger and 
+    full size for s and xs*@
 
     @foreach (var item in Model)
     {
@@ -35,6 +43,7 @@
                         <p>@Html.DisplayFor(modelItem => item.Content)</p>
                         <p>@Html.DisplayFor(modelItem => item.PublishDate)</p>
                         <p>By: @Html.DisplayFor(modelItem => item.PublisherName)</p>
+                        @*makes the edit, delete, and details into buttons*@
                         <p>
                             @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-default" })
                         @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-default" })
