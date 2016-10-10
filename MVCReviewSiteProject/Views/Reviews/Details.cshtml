@@ -3,64 +3,59 @@
 @{
     ViewBag.Title = "Details";
 }
+<div class="detailBody">
 
-<h2>Details</h2>
+    <h2 class="details">Details</h2>
 
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
+    <div>
+        <h4 class="review">Review</h4>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="detailPage">
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+                    <p>
+                        @Html.DisplayNameFor(model => model.Category.Name):
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Location)
-        </dt>
+                        @Html.DisplayFor(model => model.Category.Name)
 
-        <dd>
-            @Html.DisplayFor(model => model.Location)
-        </dd>
+                    </p>
+                    <p>
+                        @Html.DisplayNameFor(model => model.Title):
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
+                        @Html.DisplayFor(model => model.Title)
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
+                    </p>
+                    <p>
+                        @Html.DisplayNameFor(model => model.Location):
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </dt>
+                        @Html.DisplayFor(model => model.Location)
+                    </p>
 
-        <dd>
-            @Html.DisplayFor(model => model.PublishDate)
-        </dd>
+                    <p>
+                        @Html.DisplayNameFor(model => model.Content):
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PublisherName)
-        </dt>
+                        @Html.DisplayFor(model => model.Content)
+                    </p>
+                    <p>
+                        @Html.DisplayNameFor(model => model.PublishDate):
 
-        <dd>
-            @Html.DisplayFor(model => model.PublisherName)
-        </dd>
+                        @Html.DisplayFor(model => model.PublishDate)
+                    </p>
+                    <p>
+                        @Html.DisplayNameFor(model => model.PublisherName):
 
-    </dl>
+                        @Html.DisplayFor(model => model.PublisherName)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="detailPage link">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
+        </p>
+    <p class="detailPage link">
+        @Html.ActionLink("Back to List", "Index")
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

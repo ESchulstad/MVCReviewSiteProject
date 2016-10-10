@@ -62,3 +62,35 @@ a:hover{
     border-color:crimson;
     background-color:deeppink;
 }
+.navbar-inverse .navbar-nav > li > a{
+    color:white;
+}
+.details{
+    text-align:center;
+    font-family:'Angsana New';
+    font-size:80px;
+    color:white;
+    border-bottom:dotted white;
+}
+.review{
+    text-align:center;
+    font-family:'Angsana New';
+    font-size:50px;
+    margin-top:0px;
+    color:white;
+}
+.detailBody{
+    background-color:lightpink;
+    padding:20px;
+    margin-top:10px;
+}
+.detailPage{
+    text-align:center;
+    font-family:'Comic Sans MS';
+    color:deeppink;
+}
+.link{
+    border:double white;
+    max-width:300px;
+    text-align:center;
+}

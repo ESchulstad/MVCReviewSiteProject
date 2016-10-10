@@ -15,7 +15,9 @@ namespace MVCReviewSiteProject.Models
         public string Title { get; set; }
         public string Location { get; set; }
         public string Content { get; set; }
+        [Display(Name ="Publish Date")]
         public DateTime PublishDate { get; set; }
+        [Display(Name ="Publisher Name")]
         public string PublisherName { get; set; }
 
         [ForeignKey("Category")]
